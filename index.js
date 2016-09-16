@@ -1,7 +1,8 @@
 
 module.exports = {
   extends: [
-    './rules/node'
+    './rules/node',
+    './rules/strict'
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 7,
