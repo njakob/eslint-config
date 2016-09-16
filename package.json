@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-njakob",
+  "version": "0.0.0",
+  "description": "Personal ESLint config",
+  "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/njakob/koa-formatter",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/njakob/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/njakob/eslint-config/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "scripts": {
+
+  },
+  "peerDependencies": {
+    "eslint": "^3.4.0"
+  }
+}
