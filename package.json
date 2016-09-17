@@ -17,11 +17,17 @@
     "eslint",
     "eslintconfig"
   ],
-  "scripts": {
-
+  "scripts": {},
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-import-resolver-babel-module": "^2.0.1",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-flowtype": "^2.16.0"
   },
   "peerDependencies": {
     "eslint": "^3.4.0",
+    "eslint-import-resolver-babel-module": "^2.0.1",
+    "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-flowtype": "^2.16.0"
   }
 }

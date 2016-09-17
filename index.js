@@ -3,7 +3,8 @@ module.exports = {
   extends: [
     './rules/node',
     './rules/strict',
-    './rules/flow'
+    './rules/flow',
+    './rules/import'
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 7,
