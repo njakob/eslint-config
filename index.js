@@ -1,10 +1,10 @@
 
 module.exports = {
   extends: [
-    './rules/variable',
-    './rules/error',
-    './rules/node',
     './rules/strict',
+    './rules/errors',
+    './rules/variables',
+    './rules/node',
     './rules/flow',
     './rules/import'
   ].map(require.resolve),
