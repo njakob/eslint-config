@@ -6,14 +6,11 @@ module.exports = {
     './rules/errors',
     './rules/variables',
     './rules/node',
+    './rules/es6',
     './rules/flow',
     './rules/import'
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 7,
-    sourceType: 'module',
-  },
-  rules: {
-    strict: 'error',
+    sourceType: 'module'
   }
 };

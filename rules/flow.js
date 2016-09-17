@@ -3,6 +3,11 @@ module.exports = {
   plugins: [
     'flowtype'
   ],
+  settings: {
+    'flowtype': {
+      'onlyFilesWithFlowAnnotation': true
+    }
+  },
   rules: {
     // Enforces a particular style for boolean type annotations
     'flowtype/boolean-style': ['warn', 'boolean'],
