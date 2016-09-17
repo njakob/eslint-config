@@ -1,6 +1,7 @@
 
 module.exports = {
   extends: [
+    './rules/variable',
     './rules/node',
     './rules/strict',
     './rules/flow',
