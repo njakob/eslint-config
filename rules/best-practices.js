@@ -76,7 +76,7 @@ module.exports = {
         'arrowFunctions',
         'functions',
         'methods',
-      ]
+      ],
     }],
 
     // Disallow empty destructuring patterns
@@ -120,7 +120,7 @@ module.exports = {
     'no-implicit-coercion': ['error', {
       boolean: false,
       number: false,
-      string: true
+      string: true,
     }],
 
     // Disallow `var` and named `function` declarations in the global scope

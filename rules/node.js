@@ -1,7 +1,7 @@
 
 module.exports = {
   env: {
-    node: true
+    node: true,
   },
   rules: {
     // Require `return` statements after callbacks
@@ -47,5 +47,5 @@ module.exports = {
     // Disallow synchronous methods
     // http://eslint.org/docs/rules/no-sync
     'no-sync': 'off',
-  }
+  },
 };

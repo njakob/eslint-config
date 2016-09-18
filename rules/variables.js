@@ -48,6 +48,6 @@ module.exports = {
 
     // Disallow the use of variables before they are defined
     // http://eslint.org/docs/rules/no-use-before-define
-    'no-use-before-define': 'error'
-  }
+    'no-use-before-define': 'error',
+  },
 };

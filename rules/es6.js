@@ -1,7 +1,7 @@
 
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
   parser: 'babel-eslint',
   parserOptions: {
@@ -9,7 +9,7 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
-    }
+    },
   },
   rules: {
     // Enforces no braces where they can be omitted

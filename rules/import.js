@@ -1,28 +1,28 @@
 
 module.exports = {
   env: {
-    es6: true
+    es6: true,
   },
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: [
-    'import'
+    'import',
   ],
   settings: {
     'import/resolver': {
       'babel-module': {},
       'node': {
         extensions: ['.js', '.json']
-      }
+      },
     },
     'import/extensions': ['.js',  '.jsx'],
     'import/core-modules': [],
     'import/ignore': [
       'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json)$'
-    ]
+      '\\.(coffee|scss|css|less|hbs|svg|json)$',
+    ],
   },
   rules: {
     // Ensure imports point to a file/module that can be resolved

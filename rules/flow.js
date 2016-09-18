@@ -1,11 +1,11 @@
 
 module.exports = {
   plugins: [
-    'flowtype'
+    'flowtype',
   ],
   settings: {
     'flowtype': {
-      'onlyFilesWithFlowAnnotation': true
+      'onlyFilesWithFlowAnnotation': true,
     }
   },
   rules: {

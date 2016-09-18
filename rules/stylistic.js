@@ -98,8 +98,8 @@ module.exports = {
       overrides: {
         return: { after: true },
         throw: { after: true },
-        case: { after: true }
-      }
+        case: { after: true },
+      },
     }],
 
     // Enforce position of line comments
@@ -206,7 +206,7 @@ module.exports = {
         ['&', '|', '^', '~', '<<', '>>', '>>>'],
         ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
         ['&&', '||'],
-        ['in', 'instanceof']
+        ['in', 'instanceof'],
       ],
       allowSamePrecedence: false
     }],
@@ -271,7 +271,7 @@ module.exports = {
     // http://eslint.org/docs/rules/object-curly-newline
     'object-curly-newline': ['off', {
       ObjectExpression: "always",
-      ObjectPattern: { "minProperties": 4 }
+      ObjectPattern: { "minProperties": 4 },
     }],
 
     // Enforce consistent spacing inside braces
@@ -353,7 +353,7 @@ module.exports = {
     // http://eslint.org/docs/rules/space-unary-ops
     'space-unary-ops': ['error', {
       words: true,
-      nonwords: false
+      nonwords: false,
     }],
 
     // Requires or disallows a whitespace
