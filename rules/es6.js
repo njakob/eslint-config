@@ -151,6 +151,6 @@ module.exports = {
 
     // Enforce spacing around the `*` in `yield*` expressions
     // http://eslint.org/docs/rules/yield-star-spacing
-    'yield-star-spacing': ['error', 'after']
-  }
+    'yield-star-spacing': ['error', 'after'],
+  },
 };

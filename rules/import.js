@@ -25,91 +25,102 @@ module.exports = {
     ]
   },
   rules: {
-    // Ensures an imported module can be resolved to a module on the local
-    // filesystem, as defined by standard Node require.resolve behavior
+    // Ensure imports point to a file/module that can be resolved
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
     'import/no-unresolved': ['error', { commonjs: true }],
 
-    // Verifies that all named imports are part of the set of named exports in
-    // the referenced module
+    // Ensure named imports correspond to a named export in the remote file
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md
     'import/named': 'off',
 
-    // If a default import is requested, this rule will report if there is no
-    // default export in the imported module.
+    // Ensure a default export is present, given a default import
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md
     'import/default': 'off',
 
-    // Enforces names exist at the time they are dereferenced, when imported as
-    // a full namespace
+    // Ensure imported namespaces contain dereferenced properties as they are
+    // dereferenced
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md
     'import/namespace': 'off',
 
-    // Reports funny business with exports, like repeated exports of names or
-    // defaults
+    // Restrict which files can be imported in a given folder
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-restricted-paths.md
+    'import/no-restricted-paths': 'off',
+
+    // Forbid import of modules using absolute paths
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md
+    'import/no-absolute-path': 'error',
+
+    // Report any invalid exports, i.e. re-export of the same name
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/export.md
     'import/export': 'error',
 
-    // Reports use of an exported name as the locally imported name of a default
-    // export
+    // Report use of exported name as identifier of default export
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md
     'import/no-named-as-default': 'error',
 
-    // Reports use of an exported name as a property on the default export
+    // Report use of exported name as property of default export
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md
     'import/no-named-as-default-member': 'error',
 
-    // Reports use of a deprecated name, as indicated by a JSDoc block with a
-    // `@deprecated` tag or TomDoc `Deprecated:` comment
+    // Report imported names marked with `@deprecated` documentation tag
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-deprecated.md
     'import/no-deprecated': 'off',
 
-    // Forbid the import of external modules that are not declared in the
-    // `package.json`'s `dependencies`, `devDependencies`,
-    // `optionalDependencies` or `peerDependencies`
+    // Forbid the use of extraneous packages
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: false,
       optionalDependencies: false,
     }],
 
     // Forbids the use of mutable exports with `var` or `let`
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md
     'import/no-mutable-exports': 'error',
 
-    // Reports `require([string])` function calls and `module.exports` or
-    // `exports.*`
+    // Report CommonJS `require` calls and `module.exports` or `exports.*`
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-commonjs.md
     'import/no-commonjs': 'off',
 
-    // Reports `require([array], ...)` and `define([array], ...)` function calls
-    // at the module scope
+    // Report AMD `require` and `define` calls
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-amd.md
     'import/no-amd': 'error',
 
-    // Forbid the use of Node.js builtin modules
+    // No Node.js builtin modules
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-nodejs-modules.md
     'import/no-nodejs-modules': 'off',
 
-    // This rule reports any imports that come after non-import statements
+    // Ensure all imports appear before other statements
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/imports-first.md
     'import/imports-first': ['error', 'absolute-first'],
 
-    // Reports if a resolved path is imported more than once
+    // Report repeated import of the same module in multiple places
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
     'import/no-duplicates': 'off',
 
-    // Reports if namespace import is used
+    // Report namespace imports
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-namespace.md
     'import/no-namespace': 'off',
 
-    // Some file resolve algorithms allow you to omit the file extension within
-    // the import source path
+    // Ensure consistent use of file extension within the import path
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
     'import/extensions': ['off', 'never'],
 
-    // Enforce a convention in the order of `require()` and `import` statements
+    // Enforce a convention in module import order
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
     'import/order': ['error', {
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index']
+      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
     }],
 
-    // Reports if there's no new line after last `import` and `require` in group
+    // Enforce a newline after import statements
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md
     'import/newline-after-import': 'error',
 
-    // When there is only a single export from a module, prefer using default
-    // export over named export
+    // Prefer a default export if module exports a single name
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
     'import/prefer-default-export': 'off',
 
-    // Restrict which files can be imported in a given folder
-    'import/no-restricted-paths': 'off',
-
-    // Forbid modules to have too many dependencies
+    // Limit the maximum number of dependencies a module can have
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/max-dependencies.md
     'import/max-dependencies': 'off',
-
-    // Forbid import of modules using absolute paths
-    'import/no-absolute-path': 'error'
-  }
+  },
 };

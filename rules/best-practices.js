@@ -2,57 +2,75 @@
 module.exports = {
   rules: {
     // Enforces getter and setter pairs in objects
+    // http://eslint.org/docs/rules/accessor-pairs
     'accessor-pairs': 'off',
 
-    // Enforces return statements in callbacks of array's methods
+    // Enforces `return` statements in callbacks of array's methods
+    // http://eslint.org/docs/rules/array-callback-return
     'array-callback-return': 'error',
 
-    // Treat var statements as if they were block scoped
+    // Enforce the use of variables within the scope they are defined
+    // http://eslint.org/docs/rules/block-scoped-var
     'block-scoped-var': 'error',
 
     // Enforce that class methods use `this`
+    // http://eslint.org/docs/rules/class-methods-use-this
     'class-methods-use-this': 'error',
 
-    // Specify the maximum cyclomatic complexity allowed in a program
+    // Enforce a maximum cyclomatic complexity allowed in a program
+    // http://eslint.org/docs/rules/complexity
     'complexity': 'off',
 
-    // Require return statements to either always or never specify values
+    // Require `return` statements to either always or never specify values
+    // http://eslint.org/docs/rules/consistent-return
     'consistent-return': 'error',
 
-    // Specify curly brace conventions for all control statements
+    // Enforce consistent brace style for all control statements
+    // http://eslint.org/docs/rules/curly
     'curly': ['error', 'all'],
 
-    // Require default case in switch statements
+    // Require `default` case in `switch` statements
+    // http://eslint.org/docs/rules/default-case
     'default-case': ['error', { commentPattern: '^no default$' }],
 
     // Enforces consistent newlines before or after dots
+    // http://eslint.org/docs/rules/dot-location
     'dot-location': ['error', 'property'],
 
-    // Encourages use of dot notation whenever possible
+    // Enforce dot notation whenever possible
+    // http://eslint.org/docs/rules/dot-notation
     'dot-notation': 'off',
 
     // Require the use of `===` and `!==`
+    // http://eslint.org/docs/rules/eqeqeq
     'eqeqeq': ['error', 'always', { 'null': 'ignore'}],
 
-    // Make sure for-in loops have an if statement
+    // Require `for-in` loops to include an `if` statement
+    // http://eslint.org/docs/rules/guard-for-in
     'guard-for-in': 'error',
 
     // Disallow the use of `alert`, `confirm`, and `prompt`
+    // http://eslint.org/docs/rules/no-alert
     'no-alert': 'warn',
 
-    // Disallow use of `arguments.caller` or `arguments.callee`
+    // Disallow the use of `arguments.caller` or `arguments.callee`
+    // http://eslint.org/docs/rules/no-caller
     'no-caller': 'error',
 
-    // Disallow lexical declarations in `case` or `default` clauses
+    // Disallow lexical declarations in case clauses
+    // http://eslint.org/docs/rules/no-case-declarations
     'no-case-declarations': 'error',
 
     // Disallow division operators explicitly at beginning of regular expression
+    // http://eslint.org/docs/rules/no-div-regex
     'no-div-regex': 'off',
 
-    // Disallow `else` after a `return` in an `if`
+    // Disallow `else` blocks after `return` statements in `if` statements
+    // http://eslint.org/docs/rules/no-else-return
     'no-else-return': 'error',
 
     // Disallow empty functions
+    // http://eslint.org/docs/rules/no-empty-function
     'no-empty-function': ['error', {
       allow: [
         'arrowFunctions',
@@ -62,153 +80,199 @@ module.exports = {
     }],
 
     // Disallow empty destructuring patterns
+    // http://eslint.org/docs/rules/no-empty-pattern
     'no-empty-pattern': 'error',
 
-    // Disallow comparisons to `null` without a type-checking operator
+    // Disallow `null` comparisons without a type-checking operators
+    // http://eslint.org/docs/rules/no-eq-null
     'no-eq-null': 'off',
 
     // Disallow use of `eval()`
+    // http://eslint.org/docs/rules/no-eval
     'no-eval': 'error',
 
-    // Disallow adding to native types
+    // Disallow extending native types
+    // http://eslint.org/docs/rules/no-extend-native
     'no-extend-native': 'error',
 
-    // Disallow unnecessary function binding
+    // Disallow unnecessary calls to `.bind()`
+    // http://eslint.org/docs/rules/no-extra-bind
     'no-extra-bind': 'error',
 
-    // Disallow unnecessary Labels
+    // Disallow unnecessary labels
+    // http://eslint.org/docs/rules/no-extra-bind
     'no-extra-label': 'error',
 
-    // Disallow fallthrough of case statements
+    // Disallow fallthrough of `case` statements
+    // http://eslint.org/docs/rules/no-fallthrough
     'no-fallthrough': 'off',
 
-    // Disallow the use of leading or trailing decimal points in numeric literals
+    // Disallow leading or trailing decimal points in numeric literals
+    // http://eslint.org/docs/rules/no-floating-decimal
     'no-floating-decimal': 'error',
 
     // Disallow reassignments of native objects or read-only globals
+    // http://eslint.org/docs/rules/no-global-assign
     'no-global-assign': ['error', { exceptions: [] }],
 
-    // Disallow implicit type conversions
+    // Disallow shorthand type conversions
+    // http://eslint.org/docs/rules/no-implicit-coercion
     'no-implicit-coercion': ['error', {
       boolean: false,
       number: false,
       string: true
     }],
 
-    // Disallow var and named functions in global scope
+    // Disallow `var` and named `function` declarations in the global scope
+    // http://eslint.org/docs/rules/no-implicit-globals
     'no-implicit-globals': 'error',
 
-    // Disallow use of `eval()`-like methods
+    // Disallow the use of `eval()`-like methods
+    // http://eslint.org/docs/rules/no-implied-eval
     'no-implied-eval': 'error',
 
     // Disallow `this` keywords outside of classes or class-like objects
+    // http://eslint.org/docs/rules/no-invalid-this
     'no-invalid-this': 'off',
 
     // Disallow usage of `__iterator__` property
+    // http://eslint.org/docs/rules/no-iterator
     'no-iterator': 'error',
 
-    // Disallow use of labels for anything other then loops and switches
+    // Disallow labeled statements
+    // http://eslint.org/docs/rules/no-labels
     'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
 
     // Disallow unnecessary nested blocks
+    // http://eslint.org/docs/rules/no-lone-blocks
     'no-lone-blocks': 'error',
 
-    // Disallow creation of functions within loops
+    // Disallow `function` declarations and expressions inside loop statements
+    // http://eslint.org/docs/rules/no-loop-func
     'no-loop-func': 'error',
 
     // Disallow magic numbers
+    // http://eslint.org/docs/rules/no-magic-numbers
     'no-magic-numbers': 'off',
 
-    // Disallow use of multiple spaces
+    // Disallow multiple spaces
+    // http://eslint.org/docs/rules/no-multi-spaces
     'no-multi-spaces': 'error',
 
-    // Disallow use of multiline strings
+    // Disallow multiline strings
+    // http://eslint.org/docs/rules/no-multi-str
     'no-multi-str': 'error',
 
-    // Disallow use of `new` operator when not part of the assignment or
-    // comparison
+    // Disallow `new` operators outside of assignments or comparisons
+    // http://eslint.org/docs/rules/no-new
     'no-new': 'error',
 
-    // Disallow use of `new` operator for `Function` object
+    // Disallow `new` operators with the `Function` object
+    // http://eslint.org/docs/rules/no-new-func
     'no-new-func': 'error',
 
-    // Disallows creating new instances of `String`, `Number`, and `Boolean`
+    // Disallow `new` operators with the `String`, `Number`, and `Boolean`
+    // objects
+    // http://eslint.org/docs/rules/no-new-wrappers
     'no-new-wrappers': 'error',
 
-    // disallow use of (old style) octal literals
+    // Disallow octal literals
+    // http://eslint.org/docs/rules/no-octal
     'no-octal': 'error',
 
-    // disallow use of octal escape sequences in string literals, such as
-    // var foo = 'Copyright \251';
+    // Disallow octal escape sequences in string literals
+    // http://eslint.org/docs/rules/no-octal-escape
     'no-octal-escape': 'error',
 
-    // Disallow reassignment of function parameters
+    // Disallow reassigning `function` parameters
+    // http://eslint.org/docs/rules/no-param-reassign
     'no-param-reassign': ['error', { props: true }],
 
-    // Disallow usage of `__proto__` property
+    // Disallow the use of the `__proto__` property
+    // http://eslint.org/docs/rules/no-proto
     'no-proto': 'error',
 
-    // Disallow declaring the same variable more then once
+    // Disallow `var` redeclaration
+    // http://eslint.org/docs/rules/no-redeclare
     'no-redeclare': 'error',
 
-    // Disallow use of assignment in return statement
+    // Disallow assignment operators in `return` statements
+    // http://eslint.org/docs/rules/no-return-assign
     'no-return-assign': 'error',
 
-    // Disallow use of `javascript:` urls
+    // Disallow `javascript:` urls
+    // http://eslint.org/docs/rules/no-script-url
     'no-script-url': 'error',
 
-    // Disallow self assignment
+    // Disallow assignments where both sides are exactly the same
+    // http://eslint.org/docs/rules/no-self-assign
     'no-self-assign': 'error',
 
     // Disallow comparisons where both sides are exactly the same
+    // http://eslint.org/docs/rules/no-self-compare
     'no-self-compare': 'error',
 
-    // Disallow use of comma operator
+    // Disallow comma operators
+    // http://eslint.org/docs/rules/no-sequences
     'no-sequences': 'error',
 
-    // Restrict what can be thrown as an exception
+    // Disallow throwing literals as exceptions
+    // http://eslint.org/docs/rules/no-throw-literal
     'no-throw-literal': 'off',
 
-    // Disallow unmodified conditions of loops
+    // Disallow unmodified loop conditions
+    // http://eslint.org/docs/rules/no-unmodified-loop-condition
     'no-unmodified-loop-condition': 'error',
 
-    // Disallow usage of expressions in statement position
+    // Disallow unused expressions
+    // http://eslint.org/docs/rules/no-unused-expressions
     'no-unused-expressions': ['error', {
       allowShortCircuit: true,
       allowTernary: true,
     }],
 
     // Disallow unused labels
+    // http://eslint.org/docs/rules/no-unused-labels
     'no-unused-labels': 'error',
 
-    // Disallow unnecessary `.call()` and `.apply()`
+    // Disallow unnecessary calls to `.call()` and `.apply()`
+    // http://eslint.org/docs/rules/no-useless-call
     'no-useless-call': 'off',
 
-    // Disallow useless string concatenation
+    // Disallow unnecessary concatenation of literals or template literals
+    // http://eslint.org/docs/rules/no-useless-concat
     'no-useless-concat': 'error',
 
     // Disallow unnecessary string escaping
+    // http://eslint.org/docs/rules/no-useless-escape
     'no-useless-escape': 'error',
 
-    // Disallow use of void operator
+    // Disallow `void` operators
+    // http://eslint.org/docs/rules/no-void
     'no-void': 'error',
 
-    // Disallow usage of configurable warning terms in comments
+    // Disallow specified warning terms in comments
+    // http://eslint.org/docs/rules/no-warning-comments
     'no-warning-comments': 'off',
 
-    // Disallow use of the `with` statement
+    // Disallow `with` statements
+    // http://eslint.org/docs/rules/no-with
     'no-with': 'error',
 
-    // Require use of the second argument for `parseInt()`
+    // Enforce the consistent use of the radix argument when using  `parseInt()`
+    // http://eslint.org/docs/rules/radix
     'radix': 'error',
 
-    // Requires to declare all vars on top of their containing scope
+    // Require `var` declarations be placed at the top of their containing scope
+    // http://eslint.org/docs/rules/vars-on-top
     'vars-on-top': 'off',
 
-    // Require immediate function invocation to be wrapped in parentheses
+    // Require parentheses around immediate `function` invocations
+    // http://eslint.org/docs/rules/wrap-iife
     'wrap-iife': ['error', 'outside'],
 
     // Require or disallow Yoda conditions
-    'yoda': ['error', 'never']
-  }
+    // http://eslint.org/docs/rules/yoda
+    'yoda': ['error', 'never'],
+  },
 };

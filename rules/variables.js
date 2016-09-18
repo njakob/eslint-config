@@ -1,42 +1,53 @@
 
 module.exports = {
   rules: {
-    // Enforce or disallow variable initializations at definition
+    // Require or disallow initialization in `var` declarations
+    // http://eslint.org/docs/rules/init-declarations
     'init-declarations': 'off',
 
-    // Disallow the catch clause parameter name being the same as a variable in
-    // the outer scope
+    // Disallow catch clause parameters from shadowing variables in the outer scope
+    // http://eslint.org/docs/rules/no-catch-shadow
     'no-catch-shadow': 'off',
 
-    // Disallow deletion of variables
+    // Disallow deleting variables
+    // http://eslint.org/docs/rules/no-delete-var
     'no-delete-var': 'error',
 
     // Disallow labels that share a name with a variable
+    // http://eslint.org/docs/rules/no-label-var
     'no-label-var': 'error',
 
-    // Disallow specific globals
+    // Disallow specific globals variables
+    // http://eslint.org/docs/rules/no-restricted-globals
     'no-restricted-globals': 'off',
 
-    // Disallow declaration of variables already declared in the outer scope
+    // Disallow `var` declarations from shadowing variables in the outer scope
+    // http://eslint.org/docs/rules/no-shadow
     'no-shadow': 'error',
 
-    // Disallow shadowing of names such as arguments
+    // Disallow identifiers from shadowing restricted names
+    // http://eslint.org/docs/rules/no-shadow-restricted-names
     'no-shadow-restricted-names': 'error',
 
-    // Disallow use of undeclared variables unless mentioned in a `/*global */`
-    // block
+    // Disallow use of undeclared variables unless mentioned in a `/* global */`
+    // comment
+    // http://eslint.org/docs/rules/no-undef
     'no-undef': 'error',
 
-    // Disallow use of `undefined` when initializing variables
+    // Disallow initializing variables to `undefined`
+    // http://eslint.org/docs/rules/no-undef-init
     'no-undef-init': 'error',
 
-    // Disallow use of undefined variable
+    // Disallow the use of `undefined` as an identifier
+    // http://eslint.org/docs/rules/no-undefined
     'no-undefined': 'off',
 
-    // Disallow declaration of variables that are not used in the code
+    // Disallow unused variables
+    // http://eslint.org/docs/rules/no-unused-vars
     'no-unused-vars': ['error', { vars: 'local', args: 'after-used' }],
 
-    // Disallow use of variables before they are defined
+    // Disallow the use of variables before they are defined
+    // http://eslint.org/docs/rules/no-use-before-define
     'no-use-before-define': 'error'
   }
 };
