@@ -1,13 +1,13 @@
 
 # eslint-config-njakob
 
-Personal ESLint config.
+Personal ESLint configuration.
 
-## Rules sets
+## Configurations
 
-* [Flowtype](/rules/flow.js) 
-* [Import](/rules/import.js)
-* [ES6](/rules/es6.js)
+* [Flowtype](/flow.js) 
+* [Import](/import.js)
+* [ES6](/babel.js)
 
 ## Installation
 
@@ -17,11 +17,28 @@ Personal ESLint config.
 $ npm install eslint-config-njakob --sav-dev
 ```
 
-## Usage
+## Usage  
 
+In order to use the basic ES5 ESLint rules, the following file can be added.
+
+`.eslintrc`
 ```json
 {
   "extends": "njakob"
+}
+```
+
+More configurations are available in the repository.
+
+`.eslintrc`
+```json
+{
+  "extends": [
+    "njakob",
+    "njakob/babel",
+    "njakob/node",
+    "njakob/flow"
+  ]
 }
 ```
 
