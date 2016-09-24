@@ -1,17 +1,13 @@
 
 module.exports = {
   extends: [
-    './rules/strict',
-    './rules/best-practices',
-    './rules/stylistic',
-    './rules/errors',
-    './rules/variables',
-    './rules/node',
-    './rules/es6',
-    './rules/flow',
-    './rules/import'
+    './lib/strict',
+    './lib/best-practices',
+    './lib/stylistic',
+    './lib/errors',
+    './lib/variables'
   ].map(require.resolve),
   parserOptions: {
-    sourceType: 'module'
-  }
+    sourceType: 'module',
+  },
 };

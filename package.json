@@ -17,6 +17,13 @@
     "eslint",
     "eslintconfig"
   ],
+  "files": [
+    "index.js",
+    "flow.js",
+    "node.js",
+    "babel.js",
+    "lib"
+  ],
   "scripts": {},
   "devDependencies": {
     "babel-eslint": "^6.1.2",
