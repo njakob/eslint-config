@@ -24,7 +24,11 @@
     "babel.js",
     "lib"
   ],
-  "scripts": {},
+  "scripts": {
+    "bump-major": "npm version major -m \"Bump to %s\"",
+    "bump-minor": "npm version minor -m \"Bump to %s\"",
+    "bump-patch": "npm version patch -m \"Bump to %s\""
+  },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
     "eslint": "^3.5.0",
