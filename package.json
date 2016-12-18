@@ -20,8 +20,10 @@
   "files": [
     "es5.js",
     "es5-node.js",
+    "es6.js",
     "es6-flow.js",
     "es6-flow-react.js",
+    "es6-react.js",
     "lib"
   ],
   "scripts": {
@@ -31,22 +33,18 @@
     "bump-patch": "npm version patch -m \"Bump to %s\""
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.2",
-    "eslint-import-resolver-babel-module": "~2.2.1",
-    "eslint-plugin-flowtype": "~2.18.2",
-    "eslint-plugin-import": "~2.1.0"
+    "eslint": "^3.12.1"
   },
   "peerDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.0",
-    "eslint-import-resolver-babel-module": "~2.2.1",
-    "eslint-plugin-flowtype": "~2.18.2",
-    "eslint-plugin-import": "~2.1.0",
-    "eslint-plugin-jsx-a11y": "~3.0.0",
-    "eslint-plugin-react": "~6.6.0"
+    "eslint": "^3.12.1",
+    "eslint-import-resolver-babel-module": "^2.2.1",
+    "eslint-plugin-flowtype": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0"
   },
   "dependencies": {
-    "eslint-config-airbnb": "~13.0.0"
+    "eslint-config-airbnb": "^13.0.0"
   }
 }

@@ -4,15 +4,13 @@ module.exports = {
     './lib/best-practices',
     './lib/errors',
     './lib/es6',
-    './lib/flow',
     './lib/imports',
     './lib/strict',
     './lib/stylistic',
     './lib/variables',
   ].map(require.resolve),
-  parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 7,
+    ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,

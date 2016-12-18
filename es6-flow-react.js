@@ -12,8 +12,9 @@ module.exports = {
     './lib/stylistic',
     './lib/variables',
   ].map(require.resolve),
+  parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 7,
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
