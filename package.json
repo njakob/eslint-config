@@ -18,7 +18,10 @@
     "eslintconfig"
   ],
   "files": [
-    "index.js",
+    "es5.js",
+    "es5-node.js",
+    "es6-flow.js",
+    "es6-flow-react.js",
     "lib"
   ],
   "scripts": {
