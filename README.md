@@ -1,47 +1,45 @@
 
 # eslint-config-njakob
 
-Personal ESLint configuration.
+Personal ESLint configuration based on [Airbnb styleguide][airbnb-javascript].
 
 ## Configurations
 
-* [Flowtype](/flow.js) 
-* [Import](/import.js)
-* [ES6](/babel.js)
+* [ES5](/es5.js)
+* [ES5 with Node](/es5-node.js)
+* [ES6](/es6.js)
+* [ES6 with Flowtype](/es6-flow.js)
+* [ES6/React with Flowtype](/es6-flow-react.js)
 
 ## Installation
 
-[![NPM](https://nodei.co/npm/eslint-config-njakob.png?downloads=true)](https://nodei.co/npm/eslint-config-njakob/)
+[![NPM][npm-install-image]][npm]
 
 ```
 $ npm install eslint-config-njakob --sav-dev
 ```
 
-## Usage  
-
-In order to use the basic ES5 ESLint rules, the following file can be added.
-
-`.eslintrc`
-```json
-{
-  "extends": "njakob"
-}
+```
+$ yarn add eslint-config-njakob --dev
 ```
 
-More configurations are available in the repository.
+## Usage  
 
-`.eslintrc`
+The package provides multiple different configuations regarding the environment you need.
+
+In `.eslintrc` file:
 ```json
 {
-  "extends": [
-    "njakob",
-    "njakob/babel",
-    "njakob/node",
-    "njakob/flow"
-  ]
+  "extends": "njakob/es6-flow-react"
 }
 ```
 
 ## Licences
 
-[MIT](LICENSE)
+`njakob/eslint-config` is licensed under the [MIT License][licence].
+
+[licence]: LICENSE
+[airbnb-javascript]: https://github.com/airbnb/javascript
+[npm]: https://nodei.co/npm/eslint-config-njakob/
+[npm-install-image]: https://nodei.co/npm/eslint-config-njakob.png?downloads=true
+[npm-status-image]: https://img.shields.io/npm/v/eslint-config-njakob.svg
