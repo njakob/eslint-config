@@ -6,13 +6,12 @@ module.exports = {
     './lib/es6',
     './lib/flow',
     './lib/imports',
-    './lib/node',
     './lib/strict',
     './lib/stylistic',
     './lib/variables',
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 6,
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
