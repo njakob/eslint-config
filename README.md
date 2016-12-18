@@ -15,9 +15,13 @@ Personal ESLint configuration based on [Airbnb styleguide][airbnb-javascript].
 
 [![NPM][npm-install-image]][npm]
 
+With NPM:
+
 ```
 $ npm install eslint-config-njakob --sav-dev
 ```
+
+With Yarn:
 
 ```
 $ yarn add eslint-config-njakob --dev
