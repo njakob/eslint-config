@@ -6,9 +6,10 @@ Personal ESLint configuration based on [Airbnb styleguide][airbnb-javascript].
 ## Configurations
 
 * [ES5](/es5.js)
-* [ES5 with Node](/es5-node.js)
+* [ES5/Node](/es5-node.js)
 * [ES6](/es6.js)
 * [ES6 with Flowtype](/es6-flow.js)
+* [ES6/Node with Flowtype](/es6-flow-node.js)
 * [ES6/React with Flowtype](/es6-flow-react.js)
 
 ## Installation
