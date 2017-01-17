@@ -28,9 +28,9 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "bump-major": "npm version major -m \"Bump to %s\"",
-    "bump-minor": "npm version minor -m \"Bump to %s\"",
-    "bump-patch": "npm version patch -m \"Bump to %s\""
+    "bump:major": "npm version major -m \"Bump to %s\"",
+    "bump:minor": "npm version minor -m \"Bump to %s\"",
+    "bump:patch": "npm version patch -m \"Bump to %s\""
   },
   "devDependencies": {
     "eslint": "^3.12.1"
