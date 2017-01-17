@@ -17,15 +17,6 @@
     "eslint",
     "eslintconfig"
   ],
-  "files": [
-    "es5.js",
-    "es5-node.js",
-    "es6.js",
-    "es6-flow.js",
-    "es6-flow-react.js",
-    "es6-react.js",
-    "lib"
-  ],
   "scripts": {
     "lint": "eslint .",
     "bump:major": "npm version major -m \"Bump to %s\"",
