@@ -15,7 +15,13 @@
   },
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "airbnb",
+    "personal",
+    "config",
+    "node",
+    "flow",
+    "import",
+    "react"
   ],
   "scripts": {
     "lint": "eslint .",
