@@ -1,7 +1,7 @@
 
 # eslint-config-njakob
 
-Personal ESLint configuration based on [Airbnb styleguide][airbnb-javascript].
+> Personal ESLint configuration based on [Airbnb styleguide][airbnb-javascript].
 
 ## Configurations
 
