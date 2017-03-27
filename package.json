@@ -30,11 +30,11 @@
     "bump:patch": "npm version patch -m \"Bump to %s\""
   },
   "devDependencies": {
-    "eslint": "^3.12.1"
+    "eslint": "^3.18.0"
   },
   "peerDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.13.0",
+    "eslint": "^3.18.0",
     "eslint-import-resolver-babel-module": "^2.2.1",
     "eslint-plugin-flowtype": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^3.0.2",
