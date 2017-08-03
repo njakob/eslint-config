@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-njakob",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Personal ESLint config",
   "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
   "main": "index.js",
