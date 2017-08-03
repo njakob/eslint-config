@@ -25,12 +25,11 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "bump:major": "npm version major -m \"Bump to %s\"",
-    "bump:minor": "npm version minor -m \"Bump to %s\"",
-    "bump:patch": "npm version patch -m \"Bump to %s\""
+    "release": "standard-version"
   },
   "devDependencies": {
-    "eslint": "^3.18.0"
+    "eslint": "^3.18.0",
+    "standard-version": "^4.2.0"
   },
   "peerDependencies": {
     "babel-eslint": "^7.1.1",

@@ -1,7 +1,16 @@
 
-# eslint-config-njakob
+<h1 align="center">
+  eslint-config-njakob
+</h1>
 
-> Personal ESLint configuration based on [Airbnb styleguide][airbnb-javascript].
+<p align="center">
+  Personal ESLint configuration based on [Airbnb styleguide](https://github.com/airbnb/javascript).
+</p>
+
+<p align="center">
+  <a href="https://nodei.co/npm/eslint-config-njakob"><img alt="NPM version" src="https://img.shields.io/npm/v/eslint-config-njakob.svg"></a>
+  <a href="https://conventionalcommits.org"><img alt="Conventional Commits" src="https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg"></a>
+</p>
 
 ## Configurations
 
@@ -14,15 +23,9 @@
 
 ## Installation
 
-[![NPM][npm-install-image]][npm]
-
-With NPM:
-
 ```
 $ npm install eslint-config-njakob --sav-dev
 ```
-
-With Yarn:
 
 ```
 $ yarn add eslint-config-njakob --dev
@@ -39,12 +42,10 @@ In `.eslintrc` file:
 }
 ```
 
+## Changelog
+
+See [changelog](CHANGELOG.md).
+
 ## Licences
 
-`njakob/eslint-config` is licensed under the [MIT License][licence].
-
-[licence]: LICENSE
-[airbnb-javascript]: https://github.com/airbnb/javascript
-[npm]: https://nodei.co/npm/eslint-config-njakob/
-[npm-install-image]: https://nodei.co/npm/eslint-config-njakob.png?downloads=true
-[npm-status-image]: https://img.shields.io/npm/v/eslint-config-njakob.svg
+`njakob/eslint-config` is licensed under the [MIT License](LICENSE).
