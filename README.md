@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
-  Personal ESLint configuration based on [Airbnb styleguide](https://github.com/airbnb/javascript).
+  Personal ESLint configuration based on <a href="https://github.com/airbnb/javascript">Airbnb styleguide</a>.
 </p>
 
 <p align="center">
@@ -33,7 +33,7 @@ $ yarn add eslint-config-njakob --dev
 
 ## Usage  
 
-The package provides multiple different configuations regarding the environment you need.
+The package provides multiple different configurations regarding the environment you need.
 
 In `.eslintrc` file:
 ```json
