@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/njakob/eslint-config/compare/v5.0.1...v6.0.0) (2017-12-07)
+
+
+### build
+
+* Move project into `[@njakob](https://github.com/njakob)` NPM scope ([322f50f](https://github.com/njakob/eslint-config/commit/322f50f))
+
+
+### BREAKING CHANGES
+
+* Now `@njakob/eslint-config` should be used
+
+
+
 <a name="5.0.1"></a>
 ## [5.0.1](https://github.com/njakob/eslint-config/compare/v5.0.0...v5.0.1) (2017-08-03)
 

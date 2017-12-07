@@ -1,6 +1,6 @@
 {
   "name": "@njakob/eslint-config",
-  "version": "5.0.1",
+  "version": "6.0.0",
   "description": "Personal ESLint config",
   "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
   "main": "index.js",
@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "release": "standard-version"
+    "release": "standard-version -m \"chore(release): %s\""
   },
   "devDependencies": {
     "eslint": "^4.9.0",
