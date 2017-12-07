@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://nodei.co/npm/eslint-config-njakob"><img alt="NPM version" src="https://img.shields.io/npm/v/eslint-config-njakob.svg"></a>
+  <a href="https://nodei.co/npm/@njakob/eslint-config"><img alt="NPM version" src="https://img.shields.io/npm/v/@njakob/eslint-config.svg"></a>
   <a href="https://conventionalcommits.org"><img alt="Conventional Commits" src="https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg"></a>
 </p>
 
