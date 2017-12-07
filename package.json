@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-njakob",
+  "name": "@njakob/eslint-config",
   "version": "5.0.1",
   "description": "Personal ESLint config",
   "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
