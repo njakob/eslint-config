@@ -46,6 +46,6 @@ In `.eslintrc` file:
 
 See [changelog](CHANGELOG.md).
 
-## Licences
+## License
 
-`njakob/eslint-config` is licensed under the [MIT License](LICENSE).
+[MIT License](LICENSE).
