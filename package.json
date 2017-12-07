@@ -25,7 +25,8 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "release": "standard-version -m \"chore(release): %s\""
+    "release:bump": "standard-version -m \"chore(release): %s\"",
+    "release:publish": "git push --follow-tags origin master; npm publish"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
