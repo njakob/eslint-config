@@ -25,10 +25,11 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "release:bump": "standard-version -m \"chore(release): %s\"",
-    "release:publish": "git push --follow-tags origin master; npm publish"
+    "release:bump": "standard-version -s -m \"chore: Bump %s\"",
+    "release:publish": "git push --follow-tags origin master; npm publish; conventional-github-releaser -p angular"
   },
   "devDependencies": {
+    "conventional-github-releaser": "^2.0.0",
     "eslint": "^4.9.0",
     "standard-version": "^4.2.0"
   },
