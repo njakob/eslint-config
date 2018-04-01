@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.0.0"></a>
+# [7.0.0](https://github.com/njakob/eslint-config/compare/v6.0.1...v7.0.0) (2018-04-01)
+
+
+### Code Refactoring
+
+* Include directly dependencies ([0be568f](https://github.com/njakob/eslint-config/commit/0be568f))
+
+
+### BREAKING CHANGES
+
+* Dependencies are used instead of peer dependencies. This prevent to handle them separately in each projects.
+
+
+
 <a name="6.0.1"></a>
 ## [6.0.1](https://github.com/njakob/eslint-config/compare/v6.0.0...v6.0.1) (2017-12-07)
 
